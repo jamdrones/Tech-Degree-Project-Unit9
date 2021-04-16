@@ -1,0 +1,429 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  .portfolio__card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio__title {
+    text-decoration: underline;
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .portfolio__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    margin-bottom: 2em;
+  }
+  
+  .portfolio__card__title {
+    background-color: #141F31;
+    border-radius: 8px 8px 0 0;
+    width: 275px;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding: 1em 0;
+  }
+  
+  .portfolio__card__image__container {
+    width: 275px;
+    height: 200px;
+  }
+  
+  .pci__one {
+    background-image: url(./../images/api.jpg);
+  }
+  
+  .pci__two {
+    background-image: url(./../images/webapp.jpg);
+  }
+  
+  .pci__three {
+    background-image: url(./../images/wos.jpg);
+  }
+  
+  .pci__four {
+    background-image: url(./../images/picture-box.jpg);
+  }
+  
+  .pci__five {
+    background-image: url(./../images/form.jpg);
+  }
+  
+  .pci__one,
+  .pci__two,
+  .pci__three,
+  .pci__four,
+  .pci__five {
+    background-size: cover;
+    transition: opacity 0.5s;
+  }
+  .pci__one:hover,
+  .pci__two:hover,
+  .pci__three:hover,
+  .pci__four:hover,
+  .pci__five:hover {
+    opacity: 0.8;
+  }
+  
+  .portfolio__card__desc {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding: 1em;
+    height: 170px;
+    text-align: center;
+    background-color: #141F31;
+  }
+  
+  .portfolio__card__links {
+    background: #61AEE3;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    align-items: center;
+    padding: 0.75em 0;
+    justify-content: space-evenly;
+    width: 275px;
+  }
+  
+  .portfolio svg {
+    width: 60px;
+    height: 60px;
+    transition: fill 0.5s;
+  }
+  .portfolio svg:hover {
+    fill: #523351;
+  }
+
+  .contact {
+    background: #141F31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8em;
+  }
+  
+  .contact__title {
+    text-decoration: underline;
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+  }
+  
+  .form__container {
+    background: #141F31;
+    padding: 0 1em 1em;
+    width: 275px;
+    border: solid 4px #523351;
+    border-radius: 8px 2px;
+    position: relative;
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact__item {
+    display: block;
+  }
+  
+  .contact__input__title {
+    padding: 0.75em 0 0.25em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .contact__input,
+  .contact__textarea {
+    width: 240px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 8px 2px;
+    outline: none;
+    color: #fff;
+    background-color: #040507;
+  }
+  
+  .contact__input {
+    height: 50px;
+    margin-bottom: 1em;
+  }
+  
+  .contact__textarea {
+    height: 100px;
+    margin-bottom: 0.75em;
+    resize: none;
+  }
+  
+  .contact__submit {
+    background-color: #141F31;
+    border: solid 3px #61AEE3;
+    border-radius: 8px;
+    font-family: inherit;
+    border-color: #523351;
+    background-color: #523351;
+    color: #fff;
+    position: absolute;
+    bottom: -110px;
+    border-width: 5px;
+    border-radius: 2px 8px;
+    margin: 2.4em 0 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    font-weight: 600;
+    transition: background-color 0.5s;
+  }
+  .contact__submit:hover {
+    background-color: #623d61;
+    cursor: pointer;
+  }
+  
+
+  @media (min-width: 768px) {
+    .portfolio {
+        padding: 1.5em 0;
+      }
+    
+      .portfolio__title {
+        display: block;
+        text-align: left;
+        font-size: 2.4em;
+        letter-spacing: 8px;
+        margin-left: 50px;
+      }
+    
+      .portfolio__card__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+    
+      .portfolio__card {
+        margin: 25px 25px;
+      }
+      .contact {
+        padding: 1.5em 0 8em;
+      }
+    
+      .contact__title {
+        font-size: 2.4em;
+        letter-spacing: 8px;
+      }
+    
+      .form__container {
+        width: 600px;
+      }
+    
+      .contact__input,
+    .contact__textarea {
+        width: 400px;
+        font-size: 1.3em;
+      }
+    
+      .contact__textarea {
+        height: 200px;
+      }
+  }
+  @font-face {
+    font-family: Katakana;
+    src: url('https://s.cdpn.io/26175/MoonBeams-katakana_.TTF');
+}
+ .bg-1
+{
+    margin: 1em auto;
+    font-family: Katakana;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    background: #000;
+    background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+    color: rgba(0, 255, 0, .7);
+    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+    position: relative;	
+}
+@-webkit-keyframes fade{
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes fall{
+       from {top: -250px;}
+    to 	{top: 300px;}
+}
+
+
+#matrix div{
+    /* writing-mode: tb-rl; - ughh. doesn't work */
+    position: absolute;	
+    top: 0;
+    /* arrearance */
+    -webkit-transform-origin: 0%;
+    -webkit-transform: rotate(90deg); 
+    
+    /* animation */
+    -webkit-animation-name: fall, fade;			
+    -webkit-animation-iteration-count: infinite; /* use 0 to infinite */
+    -webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+    -webkit-animation-timing-function: ease-out;
+}
+#matrix span{
+    color: rgb(0, 255, 0);
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+.f1{
+    font-size: 1.2em;
+}
+.f2{
+    font-size: .9em;
+}
+.c1{
+    color: rgba(0, 255, 0, .5);
+}
+.d1{
+    -webkit-animation-duration: 4s;
+}
+.d2{
+    -webkit-animation-duration: 6s;
+}
+.d3{
+    -webkit-animation-duration: 8s;
+}
+.d4{
+    -webkit-animation-duration: 10s;
+}
+.de{	
+    -webkit-animation-delay: 3s;
+}
+
+  @media (min-width: 1024px) {
+    .portfolio__title {
+        margin-left: 75px;
+      }
+  }
+  @font-face {
+    font-family: Katakana;
+    src: url('https://s.cdpn.io/26175/MoonBeams-katakana_.TTF');
+}
+ .bg-1
+{
+    margin: 1em auto;
+    font-family: Katakana;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    background: #000;
+    background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+    color: rgba(0, 255, 0, .7);
+    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+    position: relative;	
+}
+@-webkit-keyframes fade{
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes fall{
+       from {top: -250px;}
+    to 	{top: 300px;}
+}
+
+
+#matrix div{
+    /* writing-mode: tb-rl; - ughh. doesn't work */
+    position: absolute;	
+    top: 0;
+    /* arrearance */
+    -webkit-transform-origin: 0%;
+    -webkit-transform: rotate(90deg); 
+    
+    /* animation */
+    -webkit-animation-name: fall, fade;			
+    -webkit-animation-iteration-count: infinite; /* use 0 to infinite */
+    -webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+    -webkit-animation-timing-function: ease-out;
+}
+#matrix span{
+    color: rgb(0, 255, 0);
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+.f1{
+    font-size: 1.2em;
+}
+.f2{
+    font-size: .9em;
+}
+.c1{
+    color: rgba(0, 255, 0, .5);
+}
+.d1{
+    -webkit-animation-duration: 4s;
+}
+.d2{
+    -webkit-animation-duration: 6s;
+}
+.d3{
+    -webkit-animation-duration: 8s;
+}
+.d4{
+    -webkit-animation-duration: 10s;
+}
+.de{	
+    -webkit-animation-delay: 3s;
+}
