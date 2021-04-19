@@ -3,23 +3,27 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
   }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  p {font-size: 18px;}
+  .margin {
+      font-size: 45px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+    background-image: url("../img/matrix.jpg"); /* Matrix Graphic */
+    color: #adf783;
   }
   .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #450769; /* Dark Purple */
     color: #ffffff;
+    padding-bottom: 40px;
+    
   }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
+  
   }
   .container-fluid {
     padding-top: 70px;
@@ -37,6 +41,11 @@ body {
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+
+  .portfolio {
+    background-image: url("../img/matrix.jpg"); /* Matrix Graphic */
+    color: #adf783;
+    }
 
   .portfolio__card__container {
     display: flex;
@@ -79,23 +88,23 @@ body {
   }
   
   .pci__one {
-    background-image: url(./../images/api.jpg);
+    background-image: url(./../img/employdir.png);
   }
   
   .pci__two {
-    background-image: url(./../images/webapp.jpg);
+    background-image: url(./../img/webapp.png);
   }
   
   .pci__three {
-    background-image: url(./../images/wos.jpg);
+    background-image: url(./../img/wos.png);
   }
   
   .pci__four {
-    background-image: url(./../images/picture-box.jpg);
+    background-image: url(./../img/gallery.png);
   }
   
   .pci__five {
-    background-image: url(./../images/form.jpg);
+    background-image: url(./../img/codereview.png);
   }
   
   .pci__one,
@@ -116,7 +125,7 @@ body {
   
   .portfolio__card__desc {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.9em;
+    font-size: 0.2em;
     letter-spacing: 2px;
     line-height: 20px;
     padding: 1em;
@@ -126,7 +135,7 @@ body {
   }
   
   .portfolio__card__links {
-    background: #61AEE3;
+    background: #450763;
     border-radius: 0 0 8px 8px;
     display: flex;
     align-items: center;
@@ -145,7 +154,7 @@ body {
   }
 
   .contact {
-    background: #141F31;
+    background: #450763;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,16 +165,20 @@ body {
   .contact__title {
     text-decoration: underline;
     font-size: 2em;
+    color:#adf783E3;
     letter-spacing: 3px;
     padding: 0.5em 0;
     margin-bottom: 0.5em;
   }
+  .contact__input__title {
+    color:#adf783E3;
+  }
   
   .form__container {
-    background: #141F31;
+    background: #5c2264;
     padding: 0 1em 1em;
     width: 275px;
-    border: solid 4px #523351;
+    border: solid 4px #adf783E3;
     border-radius: 8px 2px;
     position: relative;
   }
@@ -198,7 +211,7 @@ body {
     border: none;
     border-radius: 8px 2px;
     outline: none;
-    color: #fff;
+    color:  #adf783E3;
     background-color: #040507;
   }
   
@@ -214,12 +227,12 @@ body {
   }
   
   .contact__submit {
-    background-color: #141F31;
-    border: solid 3px #61AEE3;
-    border-radius: 8px;
+    background-color:  #adf783E3;
+    border: solid 3px #adf783E3;
+    border-radius: 10px;
     font-family: inherit;
-    border-color: #523351;
-    background-color: #523351;
+    border-color:  #adf783E3;
+    background-color: #1e6801;
     color: #fff;
     position: absolute;
     bottom: -110px;
@@ -233,10 +246,60 @@ body {
     transition: background-color 0.5s;
   }
   .contact__submit:hover {
-    background-color: #623d61;
+    background-color: #307951;
     cursor: pointer;
   }
   
+  canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      
+    }
+  
+  footer {
+    padding: 1em;
+    background-color: rgb(5, 3, 3);
+  }
+  
+  .footer__nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer__nav__item {
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+  }
+  
+  .footer__nav__item a {
+    fill: #adf783;
+    width: 50px;
+    height: 50px;
+    transition: fill 0.5s;
+  }
+  .footer__nav__item a:hover {
+    fill: #623d61;
+  }
+  
+  .footer__logo {
+    color: #adf783E3;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0.25em;
+    padding: 0.25em;
+  }
+  
+  .footer__logo a {
+    color: #adf783;
+    text-decoration: none;
+  }
 
   @media (min-width: 768px) {
     .portfolio {
@@ -283,147 +346,14 @@ body {
         height: 200px;
       }
   }
-  @font-face {
-    font-family: Katakana;
-    src: url('https://s.cdpn.io/26175/MoonBeams-katakana_.TTF');
-}
- .bg-1
-{
-    margin: 1em auto;
-    font-family: Katakana;
-    width: 800px;
-    height: 800px;
-    overflow: hidden;
-    background: #000;
-    background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
-    color: rgba(0, 255, 0, .7);
-    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
-    position: relative;	
-}
-@-webkit-keyframes fade{
-    0%   { opacity: 1; }
-    100% { opacity: 0; }
-}
-@-webkit-keyframes fall{
-       from {top: -250px;}
-    to 	{top: 300px;}
-}
-
-
-#matrix div{
-    /* writing-mode: tb-rl; - ughh. doesn't work */
-    position: absolute;	
-    top: 0;
-    /* arrearance */
-    -webkit-transform-origin: 0%;
-    -webkit-transform: rotate(90deg); 
-    
-    /* animation */
-    -webkit-animation-name: fall, fade;			
-    -webkit-animation-iteration-count: infinite; /* use 0 to infinite */
-    -webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
-    -webkit-animation-timing-function: ease-out;
-}
-#matrix span{
-    color: rgb(0, 255, 0);
-    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
-}
-.f1{
-    font-size: 1.2em;
-}
-.f2{
-    font-size: .9em;
-}
-.c1{
-    color: rgba(0, 255, 0, .5);
-}
-.d1{
-    -webkit-animation-duration: 4s;
-}
-.d2{
-    -webkit-animation-duration: 6s;
-}
-.d3{
-    -webkit-animation-duration: 8s;
-}
-.d4{
-    -webkit-animation-duration: 10s;
-}
-.de{	
-    -webkit-animation-delay: 3s;
-}
+  
 
   @media (min-width: 1024px) {
     .portfolio__title {
         margin-left: 75px;
       }
-  }
-  @font-face {
-    font-family: Katakana;
-    src: url('https://s.cdpn.io/26175/MoonBeams-katakana_.TTF');
-}
- .bg-1
-{
-    margin: 1em auto;
-    font-family: Katakana;
-    width: 800px;
-    height: 800px;
-    overflow: hidden;
-    background: #000;
-    background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
-    color: rgba(0, 255, 0, .7);
-    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
-    position: relative;	
-}
-@-webkit-keyframes fade{
-    0%   { opacity: 1; }
-    100% { opacity: 0; }
-}
-@-webkit-keyframes fall{
-       from {top: -250px;}
-    to 	{top: 300px;}
-}
-
-
-#matrix div{
-    /* writing-mode: tb-rl; - ughh. doesn't work */
-    position: absolute;	
-    top: 0;
-    /* arrearance */
-    -webkit-transform-origin: 0%;
-    -webkit-transform: rotate(90deg); 
-    
-    /* animation */
-    -webkit-animation-name: fall, fade;			
-    -webkit-animation-iteration-count: infinite; /* use 0 to infinite */
-    -webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
-    -webkit-animation-timing-function: ease-out;
-}
-#matrix span{
-    color: rgb(0, 255, 0);
-    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
-}
-.f1{
-    font-size: 1.2em;
-}
-.f2{
-    font-size: .9em;
-}
-.c1{
-    color: rgba(0, 255, 0, .5);
-}
-.d1{
-    -webkit-animation-duration: 4s;
-}
-.d2{
-    -webkit-animation-duration: 6s;
-}
-.d3{
-    -webkit-animation-duration: 8s;
-}
-.d4{
-    -webkit-animation-duration: 10s;
-}
-.de{	
-    -webkit-animation-delay: 3s;
-}
+      
+      
+        
+          
+          
